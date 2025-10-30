@@ -1,11 +1,11 @@
 import random 
 
 def partition(arr, low, high):
-    pivot = arr[high]
+    pivot = arr[high][0]
     i = low - 1
 
     for j in range(low, high):
-        if arr[j] <= pivot:
+        if arr[j][0] <= pivot:
             i += 1
             arr[i], arr[j] = arr[j], arr[i]
 
