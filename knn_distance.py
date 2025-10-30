@@ -43,7 +43,3 @@ def knn_distance(arr, q, k):
     diff_arr = [(abs(x - q), x) for x in arr]
     
     return quickselect(diff_arr, 0, n - 1, k)
-
-
-
-print(knn_distance([3, 10, 52, 15], 19, 3))
